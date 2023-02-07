@@ -1,0 +1,164 @@
+{
+
+  "GlobalConfiguration": {
+    "BaseUrl": "https://localhost:8966"
+  },
+  "Routes": [
+    {
+      "UpstreamPathTemplate": "/CreateToken",
+      "UpstreamHttpMethod": [ "Post" ],
+      "DownstreamPathTemplate": "/api/Auth/CreateToken",
+      "DownstreamScheme": "http",
+      "DownstreamHostAndPorts": [
+        {
+          "Host": "host.docker.internal",
+          "Port": 5298
+        }
+      ]
+    },
+    {
+      "UpstreamPathTemplate": "/Register",
+      "UpstreamHttpMethod": [ "Post" ],
+      "DownstreamPathTemplate": "/api/Auth/Register",
+      "DownstreamScheme": "http",
+      "DownstreamHostAndPorts": [
+        {
+          "Host": "host.docker.internal",
+          "Port": 5298
+        }
+      ]
+    },
+    {
+      "UpstreamPathTemplate": "/GetAllUserDomainBySubjectId",
+      "UpstreamHttpMethod": [ "Post" ],
+      "DownstreamPathTemplate": "/api/QuestionAnswer/GetAllUserDomainBySubjectId",
+      "DownstreamScheme": "http",
+      "DownstreamHostAndPorts": [
+        {
+          "Host": "host.docker.internal",
+          "Port": 5211
+        }
+      ]
+    },
+    {
+      "UpstreamPathTemplate": "/GetAllUserQuestionAnswerByUserId",
+      "UpstreamHttpMethod": [ "Post" ],
+      "DownstreamPathTemplate": "/api/QuestionAnswer/GetAllUserQuestionAnswerByUserId",
+      "DownstreamScheme": "http",
+      "DownstreamHostAndPorts": [
+        {
+          "Host": "host.docker.internal",
+          "Port": 5211
+        }
+      ]
+    },
+    {
+      "UpstreamPathTemplate": "/GetAllUserQuestionAnswerByDomainId",
+      "UpstreamHttpMethod": [ "Post" ],
+      "DownstreamPathTemplate": "/api/QuestionAnswer/GetAllUserQuestionAnswerByDomainId",
+      "DownstreamScheme": "http",
+      "DownstreamHostAndPorts": [
+        {
+          "Host": "host.docker.internal",
+          "Port": 5211
+        }
+      ]
+    },
+    {
+      "UpstreamPathTemplate": "/GetAllUserSubjectByUserId",
+      "UpstreamHttpMethod": [ "Post" ],
+      "DownstreamPathTemplate": "/api/QuestionAnswer/GetAllUserSubjectByUserId",
+      "DownstreamScheme": "http",
+      "DownstreamHostAndPorts": [
+        {
+          "Host": "host.docker.internal",
+          "Port": 5211
+        }
+      ]
+    },
+    {
+      "UpstreamPathTemplate": "/GetRandomQuestionAnswerByDomainId",
+      "UpstreamHttpMethod": [ "Post" ],
+      "DownstreamPathTemplate": "/api/QuestionAnswer/GetRandomQuestionAnswerByDomainId",
+      "DownstreamScheme": "http",
+      "DownstreamHostAndPorts": [
+        {
+          "Host": "host.docker.internal",
+          "Port": 5211
+        }
+      ]
+    },
+    {
+      "UpstreamPathTemplate": "/GetUserQuestionAnswerById",
+      "UpstreamHttpMethod": [ "Post" ],
+      "DownstreamPathTemplate": "/api/QuestionAnswer/GetUserQuestionAnswerById",
+      "DownstreamScheme": "http",
+      "DownstreamHostAndPorts": [
+        {
+          "Host": "host.docker.internal",
+          "Port": 5211
+        }
+      ]
+    },
+    {
+      "UpstreamPathTemplate": "/SaveUserQuestionAnswerById",
+      "UpstreamHttpMethod": [ "Post" ],
+      "DownstreamPathTemplate": "/api/QuestionAnswer/SaveUserQuestionAnswerById",
+      "DownstreamScheme": "http",
+      "DownstreamHostAndPorts": [
+        {
+          "Host": "host.docker.internal",
+          "Port": 5211
+        }
+      ]
+    },
+    {
+      "UpstreamPathTemplate": "/SaveUserQuestionAnswer",
+      "UpstreamHttpMethod": [ "Post" ],
+      "DownstreamPathTemplate": "/api/QuestionAnswer/SaveUserQuestionAnswer",
+      "DownstreamScheme": "http",
+      "DownstreamHostAndPorts": [
+        {
+          "Host": "host.docker.internal",
+          "Port": 5211
+        }
+      ]
+    },
+    {
+      "UpstreamPathTemplate": "/SaveUserSetting",
+      "UpstreamHttpMethod": [ "Post" ],
+      "DownstreamPathTemplate": "/api/QuestionAnswer/SaveUserSetting",
+      "DownstreamScheme": "http",
+      "DownstreamHostAndPorts": [
+        {
+          "Host": "host.docker.internal",
+          "Port": 5211
+        }
+      ]
+    },
+    {
+      "UpstreamPathTemplate": "/SaveUserSubject",
+      "UpstreamHttpMethod": [ "Post" ],
+      "DownstreamPathTemplate": "/api/QuestionAnswer/SaveUserSubject",
+      "DownstreamScheme": "http",
+      "DownstreamHostAndPorts": [
+        {
+          "Host": "host.docker.internal",
+          "Port": 5211
+        }
+      ]
+    },
+    {
+      "UpstreamPathTemplate": "/UpdatePrepairdRatioByQuesionAnswerId",
+      "UpstreamHttpMethod": [ "Post" ],
+      "DownstreamPathTemplate": "/api/QuestionAnswer/UpdatePrepairdRatioByQuesionAnswerId",
+      "DownstreamScheme": "http",
+      "DownstreamHostAndPorts": [
+        {
+          "Host": "host.docker.internal",
+          "Port": 5211
+        }
+      ]
+    }
+  ]
+}

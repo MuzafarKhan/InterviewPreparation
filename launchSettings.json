@@ -1,0 +1,18 @@
+{
+  "profiles": {
+    "Docker Compose": {
+      "commandName": "DockerCompose",
+      "commandVersion": "1.0",
+      "composeLaunchAction": "LaunchBrowser",
+      "composeLaunchServiceName": "myinterviewpreparation",
+      "composeLaunchUrl": "{Scheme}://{ServiceIPAddress}{ServicePort}",
+      "serviceActions": {
+        "apigateway.web": "StartDebugging",
+        "admin.webui": "StartDebugging",
+        "apigateway.webmobile": "StartDebugging",
+        "auth.api": "StartDebugging",
+        "myinterviewpreparation": "StartDebugging"
+      }
+    }
+  }
+}

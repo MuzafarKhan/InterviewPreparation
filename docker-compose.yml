@@ -1,0 +1,43 @@
+version: '3.4'
+
+services:
+  apigateway.web:
+    image: ${DOCKER_REGISTRY-}apigatewayweb
+    build:
+      context: .
+      dockerfile: APIGateway.Web\Dockerfile
+
+  auth.api:
+    image: ${DOCKER_REGISTRY-}authapi
+    build:
+      context: .
+      dockerfile: Auth.API\Dockerfile
+
+
+  apigateway.webmobile:
+    image: ${DOCKER_REGISTRY-}apigatewaywebmobile
+    build:
+      context: .
+      dockerfile: APIGateway.WebMobile\Dockerfile
+
+
+  admin.webui:
+    image: ${DOCKER_REGISTRY-}adminwebui
+    build:
+      context: .
+      dockerfile: Admin.WebUI\Dockerfile
+
+
+  myinterviewpreparation:
+    image: ${DOCKER_REGISTRY-}myinterviewpreparation
+    build:
+      context: .
+      dockerfile: MyInterviewPreparation\Dockerfile
+
+
+  questionanswer.api:
+    image: ${DOCKER_REGISTRY-}questionanswerapi
+    build:
+      context: .
+      dockerfile: QuestionAnswer.API\Dockerfile
+

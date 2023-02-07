@@ -1,0 +1,32 @@
+{
+
+  "GlobalConfiguration": {
+    "BaseUrl": "https://localhost:7064"
+  },
+  "Routes": [
+    {
+      "UpstreamPathTemplate": "/WeatherForecast",
+      "UpstreamHttpMethod": [ "Get" ],
+      "DownstreamPathTemplate": "/WeatherForecast",
+      "DownstreamScheme": "http",
+      "DownstreamHostAndPorts": [
+        {
+          "Host": "host.docker.internal",
+          "Port": 5298
+        }
+      ]
+    },
+    {
+      "UpstreamPathTemplate": "/WeatherForecast",
+      "UpstreamHttpMethod": [ "Post" ],
+      "DownstreamPathTemplate": "/WeatherForecast",
+      "DownstreamScheme": "http",
+      "DownstreamHostAndPorts": [
+        {
+          "Host": "host.docker.internal",
+          "Port": 5298
+        }
+      ]
+    }
+  ]
+}

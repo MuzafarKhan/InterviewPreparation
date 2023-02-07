@@ -1,0 +1,15 @@
+﻿<Project Sdk="Microsoft.NET.Sdk">
+
+  <PropertyGroup>
+    <TargetFramework>net6.0</TargetFramework>
+    <ImplicitUsings>enable</ImplicitUsings>
+    <Nullable>enable</Nullable>
+  </PropertyGroup>
+
+  <ItemGroup>
+    <ProjectReference Include="..\..\Common\BaseClient\BaseClient.csproj" />
+    <ProjectReference Include="..\..\Common\CommonEntities\CommonEntities.csproj" />
+    <ProjectReference Include="..\..\Common\GenericApi\GenericApi.csproj" />
+  </ItemGroup>
+
+</Project>
